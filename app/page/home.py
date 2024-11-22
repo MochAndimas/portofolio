@@ -28,11 +28,11 @@ def home_page():
     # Profile Summary
     st.header("Profile Summary")
     st.write("""
-    Hi, I'm Mochamad Andimas—Dimas for short—a dedicated and results-driven Data Analyst with a robust background in Management, E-Business, and over 6 years of professional experience, including 4 years in Business Development and 2 years specializing in Data Analysis. My multidisciplinary expertise enables me to bridge business strategy with data-driven insights to create value and drive decision-making.
+    Hi, I'm Mochamad Andimas—Dimas for short—a dedicated and results-driven Data Analyst with a background in Management, E-Business, and over 6 years of professional experience, including 4 years in Business Development and 2 years specializing in Data Analysis. From experiance enables me to bridge business strategy with data-driven insights to create value and drive decision-making.
 
     In my current role at Gooddreamer.id, I specialize in transforming raw data into actionable insights. I am responsible for compiling, cleaning, and analyzing data from diverse internal and external sources, utilizing advanced tools and techniques to support business growth. My key achievements include designing and implementing dynamic data visualizations and dashboards using Python and its powerful libraries, allowing stakeholders to uncover trends, monitor KPIs, and make informed decisions.
 
-    As a professional, I am a fast learner, detail-oriented problem solver, and enthusiastic about embracing emerging technologies to solve complex business challenges. I thrive in collaborative environments and have a strong track record of turning data into impactful business strategies.
+    As a professional, I am a fast learner, detail-oriented problem solver, and enthusiastic about embracing emerging technologies to solve complex business challenges. I thrive in collaborative environments and i can turning data into impactful business strategies.
     """)
 
     # Education
