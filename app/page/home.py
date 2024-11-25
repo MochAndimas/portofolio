@@ -97,6 +97,7 @@ def home_page():
         - PostgreSQL
         - MySQL  
         - streamlit
+        - SQLalchemy
     ****Soft Skill:**** 
         
         - Data Processing

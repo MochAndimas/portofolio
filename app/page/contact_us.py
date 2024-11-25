@@ -6,7 +6,7 @@ def contact_us_page():
     """
     """
     # Streamlit form to send email
-    st.title("Contact Us")
+    st.title("Contact Me")
 
     with st.form("email_form"):
         email = st.text_input("Email")
