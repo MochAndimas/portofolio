@@ -78,40 +78,37 @@ def project_3_page():
     sqlalchemy_query = """
         async def query():
             query = select(
-                func.date(GooddreamerUserChapterProgression.updated_at).label(
-                    'tanggal'),
-                GooddreamerUserChapterProgression.user_id.label('user_id'),
-                GooddreamerUserData.is_guest.label('is_guest'),
-                GooddreamerNovelChapter.novel_id.label('novel_id'),
-                GooddreamerNovel.novel_title.label('novel_title'),
-                DataCategory.category_name.label('category_name'),
-                Sources.name.label('source'),
-                func.date(GooddreamerUserData.created_at).label('install_date'),
-                func.count(GooddreamerUserChapterProgression.id).label('chapter_count')
-            ).join(
-                ModelHasSources, GooddreamerUserChapterProgression.id == ModelHasSources.model_id
-            ).join(
-                Sources, ModelHasSources.source_id == Sources.id
-            ).join(
-                GooddreamerNovelChapter, GooddreamerUserChapterProgression.chapter_id == GooddreamerNovelChapter.id
-            ).join(
-                GooddreamerNovel, GooddreamerNovelChapter.novel_id == GooddreamerNovel.id
-            ).join(
-                DataCategory, GooddreamerNovel.main_category == DataCategory.id
-            ).join(
-                GooddreamerUserData, GooddreamerUserChapterProgression.user_id == GooddreamerUserData.id
-            ).filter(
-                ModelHasSources.model_type == 'App\\Models\\ChapterProgression',
-                func.date(GooddreamerUserChapterProgression.updated_at).between(
-                    from_date, to_date),
-                GooddreamerUserChapterProgression.is_completed.in_(
-                    read_is_completed)
-            ).group_by(
-                "tanggal",
-                GooddreamerUserChapterProgression.user_id,
-                GooddreamerNovelChapter.novel_id,
-                Sources.name
-            )
+                    func.date(GooddreamerUserChapterProgression.updated_at).label('tanggal'),
+                    GooddreamerUserChapterProgression.user_id.label('user_id'),
+                    GooddreamerUserData.is_guest.label('is_guest'),
+                    GooddreamerNovelChapter.novel_id.label('novel_id'),
+                    GooddreamerNovel.novel_title.label('novel_title'),
+                    DataCategory.category_name.label('category_name'),
+                    Sources.name.label('source'),
+                    func.date(GooddreamerUserData.created_at).label('install_date'),
+                    func.count(GooddreamerUserChapterProgression.id).label('chapter_count')
+                ).join(
+                    GooddreamerUserChapterProgression.model_has_sources
+                ).join(
+                    GooddreamerUserChapterProgression.gooddreamer_novel_chapter
+                ).join(
+                    GooddreamerUserChapterProgression.gooddreamer_user_data
+                ).join(
+                    GooddreamerNovelChapter.gooddreamer_novel
+                ).join(
+                    ModelHasSources.sources
+                ).join(
+                    GooddreamerNovel.data_category
+                ).filter(
+                    ModelHasSources.model_type == 'App\\Models\\ChapterProgression',
+                    func.date(GooddreamerUserChapterProgression.updated_at).between(from_date, to_date),
+                    GooddreamerUserChapterProgression.is_completed.in_(read_is_completed)
+                ).group_by(
+                    func.date(GooddreamerUserChapterProgression.updated_at),
+                    GooddreamerUserChapterProgression.user_id,
+                    GooddreamerNovelChapter.novel_id,
+                    Sources.name
+                )
             # Stream the query results asynchronously
             results = await self.session.stream(query, execution_options={"yield_per": BATCH_SIZE, "stream_results": True})
 

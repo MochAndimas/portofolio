@@ -18,7 +18,7 @@ page_certification = st.Page(page=certification, title="Certification", url_path
 page_contact_us = st.Page(page=contact_us, title="Contact Me", url_path="/contact-us")
 page_project_1 = st.Page(page=projects_1, title="Dashboard Reporting", url_path="/dashboard-reporting")
 page_project_2 = st.Page(page=projects_2, title="Fast API", url_path="/fast-api")
-page_project_3 = st.Page(page=projects_3, title="SQLalchemy Database", url_path="/sqlalchemy-database")
+page_project_3 = st.Page(page=projects_3, title="SQLalchemy ORM Database & Query", url_path="/sqlalchemy-database")
 
 # -- Menu Options -- 
 menu_options = {
