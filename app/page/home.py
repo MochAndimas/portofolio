@@ -46,7 +46,7 @@ def home_page():
     """)
 
     # Additional Education
-    st.header("Additional Education")
+    st.header("Certifications")
     st.write("""
     ****Zero To Mastery Academy | March 2022****
              
@@ -66,20 +66,27 @@ def home_page():
     st.write("""
     ****Gooddreamer.id | Data Analyst | Oct 2022 - Present****
        
-        - Compiling internal and external data  
-        - Data processing, analysis, and visualization  
-        - Created internal reporting dashboards using Python 
+        - Transformed raw data into insightful dashboards using Python libraries (Streamlit, Plotly, Pandas, Etc).
+        - Built and maintained reporting systems to track KPIs, enabling data-driven decisions for business growth.
+        - Conducted trend analysis and generated actionable insights to optimize business strategies, improving ROIto 10%.
+        - Reduced processing errors by implementing optimized cleaning pipelines, saving 15% of data preparation time.
      
     ****Sisi Sini Coffee | Social Media & Marketing | Jun 2021 - Jan 2022****
              
-        - Created promotional content 
-        - Managed ads using Facebook Ads Manager  
+        - Create and managed ad campaigns using Facebook Ads Manager.
+        - Analyzed audience insights to develop targeted marketing strategies.
+        - Created visual content and monitored campaign performance using Instagram analytics tools.
     
     ****PT. BINA USAHA LIMA PRIMA | Business Development | Aug 2019 - Jun 2021****
     
-        - Data entry and data processing using Microsoft Excel  
-        - search/maintain clients  
-        - Logistics coordination
+        - Data Entry And Data Processing using Microsoft Excel.
+        - Search and maintain client to improve company sales and products.
+        - Coordinated logistics teams to streamline processes, improving delivery time to cloent.
+    
+    ****PT. NUSAPANGAN SUKSES MAKMUR - Business Development | Jul 2018 - Jan 2019****
+             
+        - Data Entry And Data Processing using Microsoft Excel.
+        - Create a campaign improve company sales and products.
     """)
 
     # Skills
@@ -104,5 +111,10 @@ def home_page():
         - Data Cleaning
         - Data Analysis
         - Data Visualization
+        - Get insights from raw data
+        - Get trends from raw data
+        - Big data analysis
+        - Team work
+        - Fast learnner
     """)
 
