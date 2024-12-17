@@ -242,6 +242,7 @@ def project_1_page():
     st.image("app/assets/chart2.png")
     st.image("app/assets/chart3.png")
     st.image("app/assets/chart4.png")
+    st.image("app/assets/chart5.png")
 
     menu_code = """
         with st.container(border=True):
