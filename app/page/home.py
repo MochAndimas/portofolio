@@ -105,6 +105,9 @@ def home_page():
         - MySQL  
         - streamlit
         - SQLalchemy
+        - Tableau
+        - Looker Studio
+        
     ****Soft Skill:**** 
         
         - Data Processing
