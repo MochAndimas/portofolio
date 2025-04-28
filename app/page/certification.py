@@ -7,6 +7,19 @@ def certification_page():
 
     st.write(
         """
+        ****Google Analytics Certification****
+        
+        - SkillShop - Issued Apr 2025
+        """
+    )
+    st.image("./app/assets/google_analytics.jpg")
+
+    st.write("")
+    st.write("")
+    st.write("")
+
+    st.write(
+        """
         ****Complete Python Developer in 2022: Zero to Mastery****
         
         - Udemy - Issued Feb 2022
