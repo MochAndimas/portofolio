@@ -7,6 +7,19 @@ def certification_page():
 
     st.write(
         """
+        ****Tableau Certified Data Analyst Training****
+        
+        - Udemy - Issued May 2025
+        """
+    )
+    st.image("./app/assets/tableau_certificate.jpg")
+
+    st.write("")
+    st.write("")
+    st.write("")
+
+    st.write(
+        """
         ****Google Analytics Certification****
         
         - SkillShop - Issued Apr 2025

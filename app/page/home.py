@@ -48,15 +48,20 @@ def home_page():
     # Additional Education
     st.header("Certifications")
     st.write("""
-    ****Zero To Mastery Academy | March 2022****
+             
+    ****Udemy | May 2025****
+             
+        - Tableau Certified Data Analyst Training  
+
+    ****Udemy | March 2022****
              
         - Complete Machine Learning & Data Science Bootcamp  
              
-    ****Zero To Mastery Academy | February 2022****
+    ****Udemy | February 2022****
              
         - Complete SQL and Databases Bootcamp  
              
-    ****Zero To Mastery Academy | January 2022****
+    ****Udemy | January 2022****
              
         - Complete Python Developer in 2022  
     """)
@@ -64,7 +69,7 @@ def home_page():
     # Work Experience
     st.header("Work Experience")
     st.write("""
-    ****Gooddreamer.id | Data Analyst | Oct 2022 - Present****
+    ****Gooddreamer.id | Data Analyst | Oct 2022 - Jan 2025****
        
         - Transformed raw data into insightful dashboards using Python libraries (Streamlit, Plotly, Pandas, Etc).
         - Built and maintained reporting systems to track KPIs, enabling data-driven decisions for business growth.
