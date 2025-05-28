@@ -24,7 +24,7 @@ def project_4_page():
     st.write("")
     st.write("")
 
-    st.image("app/assets/user_Activity.png")
+    st.image("app/assets/user_activity.png")
 
     st.write("")
     st.write("")
